@@ -1,0 +1,17 @@
+"""Realizar  un  programa  que  solicite  la  carga  de  las  temperaturas  de  todos  los  días  de  enero  y
+al  finalizar  devuelva  la temperatura promedio, máxima y mínimadel mes."""
+
+
+mes = []
+sumaMes = 0
+for i in range(5):
+    temperatura = float(input("Ingrese la temperatura del dia"))
+    mes.append(temperatura)
+    sumaMes += temperatura
+    if temperatura < minTemp:
+        minTemp = temperatura
+    elif temperatura > maxTemp:
+        maxTemp = temperatura
+print("El promedio de temperatura fue de ",sumaMes/len(mes))
+print("La temperatura maxima fue de ",maxTemp)
+print("La temperatura minima fue de ",minTemp)
