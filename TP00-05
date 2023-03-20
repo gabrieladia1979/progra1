@@ -1,0 +1,10 @@
+"""En un mercado los clientes pueden comprar sólo una unidad de cada producto.
+Realizar un programaque pida uno por uno los precios de los productos comprados por el cliente,
+y que al ingresar un precio igual a cero muestre el total que debe abonarpor lacompra y
+la cantidad de productoscomprados."""
+total = 0
+precio = int(input("Ingrese el precio: "))
+while precio != 0:
+    total = total + precio
+    precio=int(input("Ingrese otros precio: "))
+print(total)
