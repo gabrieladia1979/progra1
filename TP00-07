@@ -1,0 +1,27 @@
+"""Escribir un programa que, ingresado el precio de lista de un producto,
+muestre cuanto le costará al cliente según todas las  opciones  de  pago  disponibles
+(si  es  en  cuotas  además  del  precio  final  debe  mostrar  el  valor  de  cada  cuota).
+Los descuentos o recargos según las formas de pago son los siguientes:
+    En efectivo aplicar 10% de descuento
+    Tarjeta 1 pago mantener el precio de lista
+    Tarjeta 3 pagos recargar 5%
+    Tarjeta 6 pagos recargar 10%
+    Tarjeta 12 pagos recargar 15%
+    Una vez mostrados los valores, el algoritmo debe esperar un nuevo ingreso,
+    y sólo debe finalizar si se ingresa un precio de 0 pesos (en dicho caso debe terminar sin calcular nada).
+    Se pideusar un tipo de bucle que evite tener que escribir el input dos veces.
+"""
+precio = -1
+while precio != 0:
+    precio = int(input("Ingrese el precio del producto: "))
+    Descuento = precio - (precio * 0.10)
+    Couta1 = precio
+    Couta3 = precio + (precio * 0.05)
+    Couta6 = precio + (precio * 0.10)
+    Couta12 = precio + (precio * 0.15)
+
+    print("En efectivo aplicando 10% de descuento te queda en ",Descuento)
+    print("En Tarjeta 1 pago se mantiene el precio de lista y te queda en ",Couta1)
+    print("En Tarjeta 3 pago se recarga 5% y te queda en ",Couta3," y cada couta de ",Couta3/3)
+    print("En Tarjeta 6 pago se recarga 10% y te queda en ",Couta6," y cada couta de ",Couta6/6)
+    print("En Tarjeta 12 pago se recarga 15% y te queda en ",Couta12," y cada couta de ",Couta12/12)
