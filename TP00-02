@@ -1,0 +1,13 @@
+"""Realizar  un  programa  que  permita  ingresar  la  cantidad  de  inscriptos  a  una
+conferencia  y  la  cantidad  de  asientos disponibles en el auditorio.
+Se debe indicar si alcanzan los asientos. Si los asientos no alcanzan,
+indicar cuantos faltan para que todos los inscriptos puedan sentarse. """
+
+asientos = int(input("ingresar cantidad de asientos: "))
+gente = int(input("ingresar cantidad de gente: "))
+            
+if gente > asientos:
+            cuenta= gente - asientos
+            print("La cantidad de asientos que faltan es ",cuenta)
+else:
+            print("Alcanzan")
