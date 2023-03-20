@@ -1,0 +1,14 @@
+"""Desarrollar un programa que calcule cuántos kilómetros podrá recorrerun
+auto de acuerdo con la cantidad de litros de combustible ingresados y al
+tipo de camino indicado(ruta o ciudad).
+Rendimiento del vehículo:14.1 km porlitro en ruta
+10.3 km por litro en ciudad"""
+
+combustible = int(input("Cantidad de litros "))
+camino = int(input("1 - ciudad, 2 - ruta "))
+if camino == 1:
+    km = combustible * 10.3
+else:
+    km = combustible* 14.1
+print(km)
+    
