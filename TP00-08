@@ -5,7 +5,7 @@ al  finalizar  devuelva  la temperatura promedio, máxima y mínimadel mes."""
 mes = []
 sumaMes = 0
 for i in range(5):
-    temperatura = float(input("Ingrese la temperatura del dia"))
+    temperatura = float(input("Ingrese la temperatura del dia ", + str(i+1)))
     mes.append(temperatura)
     sumaMes += temperatura
     if temperatura < minTemp:
