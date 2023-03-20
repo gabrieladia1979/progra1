@@ -1,0 +1,13 @@
+"""Escribir un programa básico de caja, donde se ingrese el precio total de la compra,
+luego se ingrese el monto con el cual el cliente abona la compra,
+y finalmente informe con un mensaje si no es suficiente con lo que abonó o, caso contrario,
+informe el vuelto que se le debe dar al cliente."""
+
+monto = int(input("Monto a pagar "))
+pago = int(input("Monto recibido "))
+
+if monto > pago:
+    print("No es suficiente")
+else:
+    vuelto = pago - monto
+    print("El vuelto es de ",vuelto)
