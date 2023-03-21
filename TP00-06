@@ -2,11 +2,12 @@
 Luego  de  ingresar  la calificación del último alumno, se ingresará un -1 para terminar la carga.
 El programa informará entonces la calificación promedio del curso."""
 
-calificaciones = int(input("Ingrese la calificacion "))
 cant,totalCalif = 0, 0
-while calificaciones !=-1:
-    totalCalif += calificaciones
+while True:
     calificaciones = int(input("Ingrese la calificacion "))
+    totalCalif += calificaciones
     cant += 1
+    if calificaciones == -1:
+        break
 prom = totalCalif/cant
 print(prom)
