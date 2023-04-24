@@ -14,7 +14,7 @@ while True:
     
     segundos = segundos - 1
     
-    if minutos == 0 and segundos == 1:
+    if minutos == 0 and segundos == 0:
         print("<<<<TIEMPO>>>>")
         exit()
         
