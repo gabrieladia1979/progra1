@@ -14,13 +14,15 @@ while True:
     
     segundos = segundos - 1
     
+    if minutos == 0 and segundos == 1:
+        print("<<<<TIEMPO>>>>")
+        exit()
+        
     if segundos  == 0:
         segundos = 60
         minutos = minutos - 1
     
-        if minutos == 0 and segundos == 1:
-            print("<<<<TIEMPO>>>>")
-            exit()
+    
     
     print(reloj(minutos,segundos))
     
