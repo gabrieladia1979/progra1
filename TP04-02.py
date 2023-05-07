@@ -11,6 +11,8 @@ En el mismo programa hacer 3 versiones:
 "1 - una sin utilizar facilidades de Python"
 cad = "Hola"
 total = 80
+vueltasTotales = (80 - len(cad)) // 2
+print(("-" * vueltasTotales) + cad + ("-" * vueltasTotales))
 "2 - otra usando la facilidad de función o método incorporado"
 cad = "Hola"
 print(cad.center(80,"-"))
